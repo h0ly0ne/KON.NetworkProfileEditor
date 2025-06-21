@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>KON.NetworkProfileEditor</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>resources\app.ico</ApplicationIcon>
+    <ApplicationManifest>resources\app.manifest</ApplicationManifest>
+    <RootNamespace>KON.NetworkProfileEditor</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="code\classes\Resources.cs" />
+    <Compile Remove="code\classes\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\app.ico" />
+  </ItemGroup>
+</Project>
