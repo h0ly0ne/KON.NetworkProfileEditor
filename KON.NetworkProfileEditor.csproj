@@ -4,7 +4,7 @@
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>True</UseWindowsForms>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
@@ -19,6 +19,9 @@
   <ItemGroup>
     <Compile Remove="code\classes\Resources.cs" />
     <Compile Remove="code\classes\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\app.ico" />
